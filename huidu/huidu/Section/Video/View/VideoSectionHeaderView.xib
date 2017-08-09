@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="headerView" id="iN0-l3-epB" customClass="VideoSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="VideoSectionHeaderView" translatesAutoresizingMaskIntoConstraints="NO" id="hlr-1c-MeD">
+                    <rect key="frame" x="11" y="7" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.88527396579999995" blue="0.08326007312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Kev-O9-dCd"/>
+                        <constraint firstAttribute="height" constant="30" id="nf7-SK-vfi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搞笑视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2m-nE-57n">
+                    <rect key="frame" x="60" y="13" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.14829582253886009" green="0.14829582253886009" blue="0.14829582253886009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0次播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnJ-7w-CKb">
+                    <rect key="frame" x="159.5" y="13" width="55.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.14829582253886009" green="0.14829582253886009" blue="0.14829582253886009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t2m-nE-57n" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0Pl-PW-j3W"/>
+                <constraint firstItem="hlr-1c-MeD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="D0I-qv-Wny"/>
+                <constraint firstItem="mnJ-7w-CKb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GSH-Dv-5Nl"/>
+                <constraint firstItem="hlr-1c-MeD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N4S-hM-FuT"/>
+                <constraint firstItem="mnJ-7w-CKb" firstAttribute="leading" secondItem="t2m-nE-57n" secondAttribute="trailing" constant="38" id="iLo-mQ-dru"/>
+                <constraint firstItem="t2m-nE-57n" firstAttribute="leading" secondItem="hlr-1c-MeD" secondAttribute="trailing" constant="19" id="yhX-9l-qOE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avaterImgView" destination="hlr-1c-MeD" id="3r9-RP-VG0"/>
+                <outlet property="playCountLabel" destination="mnJ-7w-CKb" id="HUK-rQ-Hvh"/>
+                <outlet property="videoTypeLabel" destination="t2m-nE-57n" id="EP6-1r-1SE"/>
+            </connections>
+            <point key="canvasLocation" x="-51.5" y="-273"/>
+        </view>
+    </objects>
+</document>
